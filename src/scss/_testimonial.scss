@@ -1,23 +1,31 @@
 
 .testimonial{
     background: $VaryLightGray;
+    min-height: 60vh;
 
     &__title{
         @include font600;
-        padding-bottom: 6rem;
+        padding-bottom: 3rem;
+        text-align: center;
     }
 
 
     .swiper-container {
         width: 100%;
+        height: auto;
         padding-top: 4rem;
-        padding-bottom: 4rem;    
+        padding-bottom: 4rem;
         .swiper-slide {
             background-position: center;
             background-size: cover;
+            margin-top: 5rem;
             width: 400px;
-            height: 300px;
-            filter: blur(0px);
+            height: auto;
+            filter: blur(1px);
+
+            @media(max-width: 48rem){
+                width: 300px;
+            }
         }
         .swiper-slide-active{
             filter: blur(0);

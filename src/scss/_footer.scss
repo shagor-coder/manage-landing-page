@@ -33,6 +33,7 @@
         &__link{
             @include font400;
             color: $White !important;
+            font-size: 1rem !important;
 
             @include hoverEffect;
         }

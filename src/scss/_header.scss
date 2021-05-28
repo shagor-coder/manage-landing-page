@@ -1,31 +1,39 @@
 .main-header{
-    width: 100%;
+    width: 100vw;
+    height: auto;
+    padding: 1.5rem 0 0.5rem 0;
     position: fixed;
     left: 0;
     top: 0;
     z-index: 9999;
+    box-sizing: border-box;
     
 
     &.active{
         background: $White;
     }
     .nav{
-        @include disFlexb;
-        padding: 1.5rem 0 0.5rem;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
 
         &__logo{
+            width: 25%;
             display: inline-block;
             margin-top: 1rem;
             &__img{
-                width: 12rem;
-
-                @media (max-width: 768px){
-                    width: 8rem;
-                }
+                max-width: 100%;
             }
         }
 
         &__menu{
+            width: 72%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
 
             &__item{
                 display: inline-block;
@@ -45,19 +53,23 @@
 
                 @include hoverEffect;
             }
+
+            .menu_wrap{
+                text-align: center;
+            }
         }
 
 
         @media (max-width: 48rem){
 
-            justify-content: flex-start;
+            width: 100%;
 
             &__toggle{
                 position: absolute;
                 top: 1.8rem;
                 right: 1rem;
-                width: 2rem;
-                height: 2rem;
+                width: 1.8rem;
+                height: 1.8rem;
                 background: url(../src/img/icon-hamburger.svg);
                 background-repeat: no-repeat;
                 background-size: cover;
@@ -75,7 +87,7 @@
                 position: absolute;
                 top: 4.5rem;
                 left: 0;
-                width: 100%;
+                width: 100vw;
                 height: 100vh;
                 background-color: rgba(119, 68, 238, 0.583);
                 display: flex;
@@ -109,11 +121,12 @@
                 }
             }
 
-            &__cta{
-                margin-left: 10%;
-                
-                &__link{
-                    padding: 0.4rem 0.8rem !important; 
+            &__logo{
+                width: 33%;
+                display: inline-block;
+                margin-top: 1rem;
+                &__img{
+                    width: 10rem;
                 }
             }
         }

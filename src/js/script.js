@@ -36,7 +36,7 @@ var swiper = new Swiper(".mySwiper", {
     centeredSlides: true,
     slidesPerView: "auto",
     coverflowEffect: {
-      rotate: 15,
+      rotate: 10,
       stretch: 0,
       depth: 100,
       modifier: 2,

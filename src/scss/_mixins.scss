@@ -33,6 +33,8 @@
 @mixin disFlexb {
     @include disFlexC();
     justify-content: space-between;
+    flex-basis: auto;
+    width: auto;
 }
 
 @mixin btnSmall {
