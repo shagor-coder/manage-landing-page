@@ -4,7 +4,7 @@
     padding-top: 6rem;
     display: grid;
     place-items: center;
-    background: url(/src/img/bg-tablet-pattern.svg);
+    background: url(../src/img/bg-tablet-pattern.svg);
 
     @include bgControl;
     background-size: 55%;
@@ -29,6 +29,10 @@
     @media (max-width:48rem){
         text-align: center;
         padding-top: 8rem;
+
+        @include bgControl;
+        background-size: 60%;
+        background-position: right top;
     }
 
 }   
