@@ -1,0 +1,57 @@
+.access{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    text-align: center;
+
+    .card{
+        max-width: 1024px;
+        height: auto;
+        padding: 2rem 1rem;
+        margin: auto;
+        background: $DarkBlueT;
+        border-radius: 5px;
+
+        &__title{
+            @include font600;
+            padding-bottom: 1rem;
+        }
+        &__des{
+            @include font400;
+            padding-bottom: 1rem;
+        }
+    }
+
+    .form{
+        padding: 1rem .5rem;
+        position: relative;
+
+        input[type="email" ]{
+            
+            padding: 1.5rem 1rem;
+            border: none;
+            outline: none;
+            border-radius: 100vh;
+
+            &::placeholder{
+                @include font300;
+                color: hsl(0, 0%, 64%);
+            }
+        }
+        .error{
+            position: absolute;
+            bottom: -1rem;
+            left: 1rem;
+            @include font400;
+            color: hsl(0, 100%, 63%);
+            font-family: 'Work Sans';
+            transition:all .3s ease;
+        }
+        input[type="submit" ]{
+            padding: 1.5rem 1rem;
+            border: none;
+            outline: none;
+            text-align: center;
+        }
+    }
+}

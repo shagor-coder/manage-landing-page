@@ -1,0 +1,25 @@
+.simple{
+    background: $BrightRed;
+    padding: 3.5rem;
+
+    .row{
+        justify-content: space-between;
+    }
+
+    &__title{
+        @include font600;
+        color: $White !important;
+    }
+
+    &__cta{
+        text-align: right;
+    }
+
+    @media (max-width: 48rem){
+        text-align: center;
+
+        &__cta{
+            text-align: center;
+        }
+    }
+}

@@ -1,0 +1,62 @@
+
+.testimonial{
+    background: $VaryLightGray;
+
+    &__title{
+        @include font600;
+        padding-bottom: 6rem;
+    }
+
+
+    .swiper-container {
+        width: 100%;
+        padding-top: 4rem;
+        padding-bottom: 4rem;    
+        .swiper-slide {
+            background-position: center;
+            background-size: cover;
+            width: 400px;
+            height: 300px;
+            filter: blur(0px);
+        }
+        .swiper-slide-active{
+            filter: blur(0);
+        }
+        .swiper-slide-shadow-left{
+            background-image: none;
+        }
+        .swiper-slide-shadow-right{
+            background-image: none;
+        }
+    
+    }
+
+    .card{
+        padding: 1.5rem 1rem;
+        text-align: left;
+        height: auto;
+        background: $BrightRed;
+        border-radius: 5px;
+        text-align: center;
+
+        &__imgBx{
+            margin-top: -5rem;
+        }
+
+        &__body{
+
+            &__title{
+                @include font400;
+                font-weight: 700;
+                color: $White !important;
+                padding: 1rem 0;
+            }
+
+            &__des{
+                @include font400;
+                color: $VeryPaleRed;
+            }
+        }
+        
+    }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "manage-landing-page",
+  "version": "1.0.0",
+  "description": "Landing Page",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shagor-coder/manage-landing-page.git"
+  },
+  "author": "shagor-coder",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shagor-coder/manage-landing-page/issues"
+  },
+  "homepage": "https://github.com/shagor-coder/bookmark-landing-page#readme",
+  "dependencies": {
+    "browser-sync": "^2.26.14",
+    "cssnano": "^5.0.2",
+    "gulp": "^4.0.2",
+    "gulp-cli": "^2.3.0",
+    "gulp-postcss": "^9.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-terser": "^2.0.1",
+    "postcss": "^8.2.15"
+  }
+}

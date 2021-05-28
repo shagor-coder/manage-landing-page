@@ -1,0 +1,66 @@
+.about{
+
+    background: url(/src/img/bg-tablet-pattern.svg);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: 30%;
+
+    &__title{
+        @include font600;
+    }
+    &__des{
+        @include font400;
+        padding-bottom: 1rem;
+    }
+
+    .row{
+        align-items: flex-start !important;
+    }
+
+    &__list{
+
+        &__item{
+            position: relative;
+            margin: 0  0 2rem 0;
+            span{
+
+                &:nth-child(1){
+                    display: inline-block;
+                    height: 100%;
+                    margin-right: 0.5rem;
+                    pointer-events: none;
+                    padding: .5rem;
+                }
+                &:nth-child(2){
+                    @include font400;
+                    display: inline-block;
+                    font-weight: 700 !important;
+                    color: $VeryDarkBlue !important;
+                }
+
+                &:nth-child(3){
+                    @include font400;
+                    display: inline-block;
+                    margin-left: 3.2rem;
+                }
+            }
+        }
+    }
+    @media (max-width:48rem){
+        text-align: center;
+
+        &__list{
+
+            &__item{
+                text-align: left;
+                span{
+                    &:nth-child(3){
+                        @include font400;
+                        display: inline-block;
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+    }
+}

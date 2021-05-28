@@ -1,0 +1,98 @@
+.footer{
+    background: $VeryDarkBlue;
+    padding: 2rem 0;
+
+    .row{
+        justify-content: space-between !important;
+        align-items: flex-end !important;
+        flex-wrap: wrap-reverse !important;
+    }
+    .flex__bt{
+        @media (max-width: 48rem){
+            justify-content: center;
+            margin-top: 2rem;
+        }
+    }
+    &__site{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;        
+
+        &__item{
+            display: inline-block;
+            position: relative;
+
+            &:not(:last-child){
+                margin-bottom: .3rem;
+                padding-bottom: .5rem;
+            }
+
+        }
+
+        &__link{
+            @include font400;
+            color: $White !important;
+
+            @include hoverEffect;
+        }
+
+        @media (max-width: 48rem){
+            padding: 0 3rem;
+        }
+    }
+
+    &__sci{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 7rem;
+
+        &__item{
+            display: inline-block;
+            transition: all 0.3s ease;
+
+            &:not(:last-child){
+                margin-right: 0.5rem;
+            }
+
+            &:hover{
+                transform: scale(1.2);
+            }
+        }
+
+        &__link{
+            img{
+                width: 2.2rem;
+            }
+        }
+
+        @media (max-width: 48rem){
+            margin-top: 2rem;
+            min-height: 8rem;
+            align-items: center;
+            flex-direction: column-reverse !important;
+        }
+    }
+
+    form[method="post"]{
+        @include disFlexC;
+
+
+        input[type="email"]{
+            display: inline-block;
+            margin-right: 0.3rem;
+            border: none;
+            outline: none;
+            padding: 1rem 1.625rem;
+            border-radius: 100vh;
+            @include font400;
+            font-size: 0.825rem !important;
+        }
+
+        input[type="submit"]{
+            border: none;
+            outline: none;
+        }
+    }
+}
